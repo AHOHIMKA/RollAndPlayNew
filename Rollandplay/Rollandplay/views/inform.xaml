@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Rollandplay.views.inform">
+    <ContentPage.Content>
+        <StackLayout x:Name="mainLayout">
+            <!-- другие элементы, если есть -->
+
+            <ListView x:Name="informListView" ItemTapped="OnItemTapped">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="10">
+                                <!-- Номер элемента в списке -->
+                                <Label Text="{Binding Number}" VerticalOptions="Center" />
+
+                                <!-- Название действия -->
+                                <Label Text="{Binding ActionName}" VerticalOptions="Center" />
+
+                                <!-- Изображение, например, камеры -->
+                                <Image Source="{Binding ImageSource}" VerticalOptions="Center" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

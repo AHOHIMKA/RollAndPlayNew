@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Rollandplay.views.Home">
+    <ContentPage.Content>
+        <RelativeLayout>
+            <Image Source="fone.png" Aspect="AspectFill" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}" />
+            <ScrollView RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
+                <StackLayout>
+                    <Label  x:Name="myLabel" FontSize="30" TextColor="Wheat" HorizontalTextAlignment="Center" FontFamily="Fonts/nodesto_caps_condensed_bold_italic.ttf#Nodesto Caps Condensed Bold Italic" Text="Welcome to the world of "
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+                    <Label  x:Name="myLabel1" FontSize="30" TextColor="Wheat" HorizontalTextAlignment="Center" FontFamily="Fonts/nodesto_caps_condensed_bold_italic.ttf#Nodesto Caps Condensed Bold Italic" Text="Role and Play! "
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+                    <!-- Изображения связанные с DND -->
+                    <Grid Margin="0,50,0,20">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="190"/>
+                        </Grid.RowDefinitions>
+                        <Image Source="dungeon_image.png" Aspect="AspectFit" HorizontalOptions="StartAndExpand" />
+                        <Image Source="dragon_image.png" Aspect="AspectFit" HorizontalOptions="EndAndExpand"/>
+                    </Grid>
+
+                    <Label FontSize="30" TextColor="Wheat" FontFamily="Fonts/nodesto_caps_condensed_bold_italic.ttf#Nodesto Caps Condensed Bold Italic" Text="О RoleAndPlay "
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+                    <Label TextColor="White" Text="     Role and PLay (RAP) - это настольная ролевая игра, созданная Гари Гигаксом и Дэйвом Арнесоном. Игроки могут создавать своих персонажей, исследовать фантастические миры, сражаться с монстрами и взаимодействовать с другими игроками в увлекательных кампаниях."
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+
+                    <Label FontSize="25" TextColor="Wheat" Text="Возможности приложения: "
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+                    <Label TextColor="White" Text="     1. Бросайте кости различных форм для определения исхода событий. " 
+                     LineBreakMode="WordWrap"
+                     VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+                    <Label TextColor="White" Text="     2. Создавайте лист персонажа, добавляйте фотографии и заполняйте характеристики. " 
+                     LineBreakMode="WordWrap"
+                     VerticalOptions="CenterAndExpand" 
+                     HorizontalOptions="CenterAndExpand" />
+                    <Label TextColor="White" Text="     3. Исследуйте библиотеку правил RAP и получайте актуальную информацию. " 
+                     LineBreakMode="WordWrap"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+                    <Label TextColor="White" Text="     4. Подключайтесь к сообществу игроков, обменивайтесь опытом и идеями. " 
+                    LineBreakMode="WordWrap"
+                    VerticalOptions="CenterAndExpand" 
+                     HorizontalOptions="CenterAndExpand" />
+                    <Label TextColor="White" Text="     5. Отслеживайте свои кампании и приключения с помощью встроенного календаря. " 
+                     LineBreakMode="WordWrap"
+                     VerticalOptions="CenterAndExpand" 
+                     HorizontalOptions="CenterAndExpand" />
+
+
+
+                </StackLayout>
+            </ScrollView>
+
+
+        </RelativeLayout>
+    </ContentPage.Content>
+</ContentPage>

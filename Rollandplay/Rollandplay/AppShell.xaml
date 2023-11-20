@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:Rollandplay"
+            xmlns:views="clr-namespace:Rollandplay.views"
+            xmlns:lottie="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            Shell.BackgroundColor="#B88355"
+            Shell.ForegroundColor="#DDDFCF"
+            Shell.TabBarBackgroundColor="#B88355"
+            Shell.TabBarForegroundColor="#DDDFCF"
+             x:Class="Rollandplay.AppShell">
+
+
+    <views:Home Title="Главная" IconImageSource="home.png" />
+    <views:inform Title="Инфо" IconImageSource="info.png" />
+    
+</TabbedPage>
